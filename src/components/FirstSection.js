@@ -11,10 +11,10 @@ function FirstSection() {
   return (
     <section className="container-section h-screen">
       <div className="  items-center justify-center md:py-10">
-        <h1 className="  text-white  lg:text-7xl text-3xl   font-bold  text-center ">
+        <h1 className="  text-white  lg:text-7xl text-5xl  font-bold  text-center py-6 ">
           Moodeng: The Hippo Meme Coin
         </h1>
-        <h3 className="text-white md:text-2xl md:py-16  font-bold text-center">
+        <h3 className="text-white text-2xl lg:5xl md:py-16  font-bold text-center">
           Dive into the whimsical world of Moodeng, the hippo-themed meme coin
           that's making waves on the Dogecoin blockchain!
         </h3>
