@@ -11,7 +11,7 @@ function FirstSection() {
   return (
     <section className="container-section h-screen">
       <div className="  items-center justify-center md:py-10">
-        <h1 className="  text-white  text-7xl   font-bold  text-center ">
+        <h1 className="  text-white  lg:text-7xl text-3xl   font-bold  text-center ">
           Moodeng: The Hippo Meme Coin
         </h1>
         <h3 className="text-white md:text-2xl md:py-16  font-bold text-center">
