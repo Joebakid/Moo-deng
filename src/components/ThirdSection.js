@@ -39,7 +39,7 @@ function ThirdSection() {
   }
   return (
     <section className=" w-[80%] mx-auto flex flex-col items-center justify-center ">
-      <h1 className="  text-white  lg:text-7xl text-6xl  font-bold  text-center py-6 mt-60">
+      <h1 className="  text-white  lg:text-7xl text-6xl  font-bold  text-center py-6 mt-10">
         ROADMAP
       </h1>
       <div className="flex flex-wrap justify-center items-center ">

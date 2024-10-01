@@ -3,7 +3,7 @@ import React from "react";
 function FourthSection() {
   return (
     <section className="w-[80%] mx-auto flex flex-col items-center justify-center  ">
-      <div className=" flex flex-col items-center justify-center  py-32">
+      <div className=" flex flex-col items-center justify-center  py-10">
         <h1 className="  text-white  lg:text-7xl text-3xl  font-bold  text-center py-6 ">
           Tokenomics of Moo Deng: A 100% Community Token
         </h1>
