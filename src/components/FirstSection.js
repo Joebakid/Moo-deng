@@ -9,12 +9,12 @@ function FirstSection() {
     );
   }
   return (
-    <section className="container-section h-screen">
-      <div className="  items-center justify-center py-3 md:py-10">
-        <h1 className="  text-white  lg:text-7xl text-6xl  font-bold  text-center py-6 ">
+    <header className="  h-screen ">
+      <div className=" flex flex-col items-center justify-center py-3    md:w-[65%] mx-auto w-[80%]">
+        <h1 className="  text-white  py-8  md:text-6xl   text-4xl     font-bold  text-center    ">
           Moodeng: The Hippo Meme Coin
         </h1>
-        <h3 className="text-white text-2xl lg:5xl md:py-16  font-bold text-center">
+        <h3 className="  md:text-2xl py-8 text-xl  font-bold text-center  text-green-400">
           Dive into the whimsical world of Moodeng, the hippo-themed meme coin
           that's making waves on the Dogecoin blockchain!
         </h3>
@@ -23,7 +23,7 @@ function FirstSection() {
           <Link btn="btn" href="https://doggy.market/$moo" text="Buy Moo" />
         </div>
       </div>
-    </section>
+    </header>
   );
 }
 

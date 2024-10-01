@@ -20,11 +20,15 @@ body {
     rgba(41, 153, 181, 1) 100%,
     rgba(0, 212, 255, 1) 100%
   );
+
+  /* background: rgba(255, 255, 255, 0.5);   */
+  /* opacity: 0.3; */
+}
+
+header {
   background-image: url("/public/img/bg.jpg");
   background-size: cover;
   background-position: center;
-  /* background: rgba(255, 255, 255, 0.5);   */
-  /* opacity: 0.3; */
 }
 
 /* styles.css or styles.scss */
@@ -34,13 +38,32 @@ body {
 } */
 
 .container-section {
-  @apply box-border mx-auto  md:w-[80vw] w-[85%] md:py-20  max-w-screen-xl justify-center items-center flex h-screen;
+  @apply box-border mx-auto  md:w-[80vw] w-[85%] md:py-20  max-w-screen-xl justify-center items-center flex h-screen flex-col py-32;
 }
 
 .btn {
-  @apply bg-slate-500 text-white py-3 px-10  hover:bg-zinc-400   rounded-lg transition-all duration-500 ease-in-out;
+  @apply bg-slate-500 text-white py-3 px-10  hover:bg-zinc-400   rounded-lg transition-all duration-500 ease-in-out font-bold shadow-lg;
 }
 
 .transitional-el {
   @apply transition-all duration-500 ease-in-out;
+}
+
+/* .card {
+  @apply mt-8   inline-block  rounded overflow-hidden shadow-md relative hover:shadow-2xl cursor-pointer transition-all duration-500;
+} */
+
+section {
+  @apply my-32 py-10;
+}
+.cardClass {
+  @apply text-white border border-white p-5 flex flex-col justify-center items-center rounded-lg bg-zinc-700 m-10 shadow-lg;
+}
+
+.BoldtitleClass {
+  @apply font-bold text-green-400;
+}
+
+.listClassName {
+  @apply text-white py-4;
 }
