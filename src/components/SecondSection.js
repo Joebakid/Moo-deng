@@ -7,7 +7,7 @@ function SecondSection() {
         <h1 className="  text-white  lg:text-7xl text-6xl  font-bold  text-center py-6 ">
           About Moodeng
         </h1>
-        <h3 className="text-white text-2xl lg:5xl md:py-16  font-bold text-center">
+        <h3 className="text-white sm:text-2xl lg:5xl md:py-16  font-bold text-center">
           Moodeng is a playful and vibrant cryptocurrency that captures the fun
           and charm of hippos while leveraging the robust ecosystem of the
           Dogecoin blockchain. Our mission is to create a thriving community
