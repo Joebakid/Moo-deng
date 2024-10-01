@@ -9,7 +9,7 @@ function FirstSection() {
     );
   }
   return (
-    <header className="  h-screen ">
+    <header id="first-section" className="  h-screen ">
       <div className=" flex flex-col items-center justify-center py-3    md:w-[65%] mx-auto w-[80%]">
         <h1 className="  text-white  py-8  md:text-6xl   text-4xl     font-bold  text-center    ">
           Moodeng: The Hippo Meme Coin

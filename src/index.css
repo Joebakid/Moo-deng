@@ -10,6 +10,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* background-color: #444; */
   background: rgb(2, 0, 36);
