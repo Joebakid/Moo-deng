@@ -10,7 +10,7 @@ function FirstSection() {
   }
   //   flex flex-col items-center justify-center py-24   md:w-[65%] mx-auto w-[80%]
   return (
-    <header id="home" className="  h-screen ">
+    <header id="home" className="  h-full ">
       <div className=" flex flex-col items-center justify-center py-24   md:w-[65%] mx-auto w-[80%]">
         <h1 className="  text-white  py-8  md:text-6xl   text-4xl     font-bold  text-center  2xl:text-9xl  ">
           Moodeng: The Hippo MemeCoin
