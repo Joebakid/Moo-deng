@@ -10,11 +10,11 @@ function FirstSection() {
   }
   return (
     <header id="first-section" className="  h-screen ">
-      <div className=" flex flex-col items-center justify-center py-3    md:w-[65%] mx-auto w-[80%]">
-        <h1 className="  text-white  py-8  md:text-6xl   text-4xl     font-bold  text-center    ">
+      <div className=" flex flex-col items-center justify-center py-24   md:w-[65%] mx-auto w-[80%]">
+        <h1 className="  text-white  py-8  md:text-6xl   text-4xl     font-bold  text-center  2xl:text-9xl  ">
           Moodeng: The Hippo Meme Coin
         </h1>
-        <h3 className="  md:text-2xl py-8 text-xl  font-bold text-center  text-green-400">
+        <h3 className="  md:text-2xl py-8 text-xl  font-bold text-center  text-green-400  2xl:text-6xl">
           Dive into the whimsical world of Moodeng, the hippo-themed meme coin
           that's making waves on the Dogecoin blockchain!
         </h3>
