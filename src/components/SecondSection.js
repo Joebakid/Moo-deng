@@ -2,7 +2,10 @@ import React from "react";
 
 function SecondSection() {
   return (
-    <section className="w-[80%] mx-auto flex flex-col items-center justify-center ">
+    <section
+      id="about"
+      className="w-[80%] mx-auto flex flex-col items-center justify-center "
+    >
       <div className="  items-center justify-center py-3 md:py-10">
         <h1 className="  text-white  lg:text-7xl text-6xl  font-bold  text-center py-6 ">
           About Moodeng

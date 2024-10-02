@@ -1,5 +1,4 @@
 import React from "react";
- 
 
 const ImageCarousel = () => {
   const images = [
@@ -11,7 +10,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <div className="container mx-auto my-8 overflow-hidden">
+    <div className="container mx-auto   pb-32 overflow-hidden  my-20 py-10">
       <h1 className="text-white lg:text-7xl text-6xl font-bold text-center py-6">
         MEME
       </h1>
@@ -19,21 +18,13 @@ const ImageCarousel = () => {
         <div className="marquee-content">
           {images.map((image, index) => (
             <div key={index} className="image-wrapper">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="image"
-              />
+              <img src={image.src} alt={image.alt} className="image" />
             </div>
           ))}
           {/* Duplicate the images for endless scrolling effect */}
           {images.map((image, index) => (
             <div key={`duplicate-${index}`} className="image-wrapper">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="image"
-              />
+              <img src={image.src} alt={image.alt} className="image" />
             </div>
           ))}
         </div>

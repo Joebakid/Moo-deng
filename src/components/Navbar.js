@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import FirstSection from "./FirstSection";
+import SecondSection from "./SecondSection";
+import ThirdSection from "./ThirdSection";
+import FourthSection from "./FourthSection";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,12 +12,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 text-white p-4">
+    <nav className="bg-gray-800 text-white p-4 fixed top-0 z-50 left-0 right-0 px-16">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-bold">M👀👀Deng</div>
+        <div className="text-2xl font-bold">M👀Deng</div>
 
-        {/* Hamburger Icon */}
+        {/* Hamburger Icon for mobile */}
         <div className="md:hidden flex items-center" onClick={toggleMenu}>
           <button className="text-white focus:outline-none">
             <svg
@@ -34,7 +38,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 transitional-el">
+        <div className="hidden md:flex space-x-6">
           <a href="#home" className="hover:text-yellow-400">
             Home
           </a>
@@ -47,14 +51,19 @@ const Navbar = () => {
           <a href="#roadmap" className="hover:text-yellow-400">
             Roadmap
           </a>
-          <a href="#contact" className="hover:text-yellow-400">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://x.com/moodengondoge?s=11"
+            className="hover:text-yellow-400"
+          >
             Twitter
           </a>
         </div>
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden fixed  inset-0 bg-gray-800 text-white transform transition-transform ${
+          className={`md:hidden fixed inset-0 bg-gray-800 text-white z-40 transform transition-transform duration-300 ease-in-out ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -78,27 +87,48 @@ const Navbar = () => {
           </div>
           <ul className="flex flex-col justify-center items-center space-y-10 h-full py-10">
             <li>
-              <a href="#home" className="text-2xl hover:text-yellow-400">
+              <a
+                href="#home"
+                className="text-2xl hover:text-yellow-400"
+                onClick={toggleMenu}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="text-2xl hover:text-yellow-400">
+              <a
+                href="#about"
+                className="text-2xl hover:text-yellow-400"
+                onClick={toggleMenu}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#tokenomics" className="text-2xl hover:text-yellow-400">
+              <a
+                href="#tokenomics"
+                className="text-2xl hover:text-yellow-400"
+                onClick={toggleMenu}
+              >
                 Tokenomics
               </a>
             </li>
             <li>
-              <a href="#roadmap" className="text-2xl hover:text-yellow-400">
+              <a
+                href="#roadmap"
+                className="text-2xl hover:text-yellow-400"
+                onClick={toggleMenu}
+              >
                 Roadmap
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-2xl hover:text-yellow-400">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://x.com/moodengondoge?s=11"
+                className="text-2xl hover:text-yellow-400"
+              >
                 Twitter
               </a>
             </li>

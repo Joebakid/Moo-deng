@@ -59,7 +59,7 @@ header {
 } */
 
 section {
-  @apply my-32 py-10;
+  @apply my-20 py-10;
 }
 .cardClass {
   @apply text-white border border-white p-5 flex flex-col justify-center items-center rounded-lg bg-zinc-700 m-10 shadow-lg;
@@ -109,5 +109,15 @@ section {
   }
   100% {
     transform: translateX(-50%); /* Move to the left by 50% of the content */
+  }
+}
+
+/* Spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

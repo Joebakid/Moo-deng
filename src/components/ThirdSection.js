@@ -16,10 +16,11 @@ function ThirdSection() {
   }) {
     return (
       <div className={cardClass}>
-        <h2>
+        <h1>
           {" "}
-          <span className={BoldtitleClass}> {phase}</span> : {title}
-        </h2>
+          <span className={BoldtitleClass}> {phase}</span>
+        </h1>
+        <h2 className="uppercase">{title}</h2>
         <ul>
           <li className={listClassName}>
             <span className={BoldtitleClass}>{colorTitleOne}</span> :
@@ -38,7 +39,10 @@ function ThirdSection() {
     );
   }
   return (
-    <section className=" w-[80%] mx-auto flex flex-col items-center justify-center ">
+    <section
+      id="roadmap"
+      className=" w-[80%] mx-auto flex flex-col items-center justify-center "
+    >
       <h1 className="  text-white  lg:text-7xl text-6xl  font-bold  text-center py-6 mt-10">
         ROADMAP
       </h1>
@@ -64,7 +68,7 @@ function ThirdSection() {
           listItemThree=" Develop governance mechanisms allowing Moodeng holders to vote on key decisions impacting the project"
           listClassName=" listClassName"
           cardClass="cardClass"
-          phase="Phase 3"
+          phase="Phase 2"
           colorTitleOne="Exchange Listings"
           colorTitleTwo="NFT collection"
           colorTitleThree="Community Governance"
