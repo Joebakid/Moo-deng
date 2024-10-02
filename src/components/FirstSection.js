@@ -21,7 +21,7 @@ function FirstSection() {
         </h3>
 
         <div className="flex justify-center items-center py-10">
-          <Link btn="btn" href="https://doggy.market/$moo" text="Buy Moo" />
+          <Link btn="btn" href="#" text="Trade Moo Soon" />
         </div>
       </div>
     </header>

@@ -15,7 +15,9 @@ function FourthSection() {
           blockchain, with no pre-minted allocations for developers, team
           members, or any centralized entities. This ensures that the project
           stays true to its decentralized roots, prioritizing the community's
-          interest and involvement over individual gains.
+          interest and involvement over individual gains. With a total
+          circulation of just 21 million tokens, Moodeng aims to foster a fair
+          and inclusive ecosystem for all holders.
         </h3>
 
         <div className="flex justify-center items-center py-10"></div>
