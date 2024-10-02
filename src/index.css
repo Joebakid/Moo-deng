@@ -24,6 +24,7 @@ body {
     rgba(41, 153, 181, 1) 100%,
     rgba(0, 212, 255, 1) 100%
   );
+  overflow-x: hidden;
 
   /* background: rgba(255, 255, 255, 0.5);   */
   /* opacity: 0.3; */
@@ -70,4 +71,43 @@ section {
 
 .listClassName {
   @apply text-white py-4;
+}
+
+/* Carousel */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite; /* Adjust speed here */
+}
+
+.image-wrapper {
+  display: inline-block;
+  width: 200px; /* Fixed width for images */
+  height: 150px; /* Fixed height for images */
+  padding: 0 20px; /* Space between images */
+}
+
+.image {
+  width: 100%; /* Make the image fit its container */
+  height: 100%; /* Make the image fit its container */
+  object-fit: cover; /* Ensure aspect ratio is maintained */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0); /* Start at 0 */
+  }
+  100% {
+    transform: translateX(-50%); /* Move to the left by 50% of the content */
+  }
 }

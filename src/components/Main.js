@@ -4,6 +4,7 @@ import SecondSection from "./SecondSection";
 import ThirdSection from "./ThirdSection";
 import FourthSection from "./FourthSection";
 import Footer from "./Footer";
+import ImageCarousel from "./ImageCarousel";
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
 
       <hr />
       <FourthSection />
+      <ImageCarousel />
       <Footer />
     </div>
   );
