@@ -20,7 +20,7 @@ function ThirdSection() {
           {" "}
           <span className={BoldtitleClass}> {phase}</span>
         </h1>
-        <h2 className="uppercase">{title}</h2>
+        <h2 className="uppercase text-center">{title}</h2>
         <ul>
           <li className={listClassName}>
             <span className={BoldtitleClass}>{colorTitleOne}</span> :

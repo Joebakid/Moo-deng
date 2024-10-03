@@ -1,4 +1,5 @@
 import React from "react";
+import FirstSection from "./FirstSection";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         © 2024 M👀Deng . All Rights Reserved.
         <br />
         <a
-          href="#first-section"
+          href="#home"
           className="text-green-400 underline hover:text-green-200 py-3"
         >
           Back to top
