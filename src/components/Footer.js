@@ -1,5 +1,5 @@
 import React from "react";
-import FirstSection from "./FirstSection";
+// import FirstSection from "./FirstSection";
 
 export default function Footer() {
   return (

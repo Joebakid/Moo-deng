@@ -1,18 +1,32 @@
 import React, { useState } from "react";
-import FirstSection from "./FirstSection";
-import SecondSection from "./SecondSection";
-import ThirdSection from "./ThirdSection";
-import FourthSection from "./FourthSection";
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { Power3 } from "gsap";
+// import FirstSection from "./FirstSection";
+// import SecondSection from "./SecondSection";
+// import ThirdSection from "./ThirdSection";
+// import FourthSection from "./FourthSection";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  let nav = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.fromTo(nav, { opacity: 0, y: "-30%" }, { opacity: 1, y: "0%" });
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="bg-gray-800 text-white p-4 fixed top-0 z-50 left-0 right-0 px-16">
+    <nav
+      ref={(el) => {
+        nav = el;
+      }}
+      className="bg-gray-800 text-white p-4 fixed top-0 z-50 left-0 right-0 px-16 opacity-0 "
+    >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold">M👀Deng</div>
