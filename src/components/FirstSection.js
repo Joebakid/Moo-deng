@@ -50,7 +50,7 @@ function FirstSection() {
           ref={(el) => {
             title = el;
           }}
-          className="  text-white  py-8  md:text-6xl   text-4xl     font-bold  text-center  2xl:text-9xl  "
+          className="  text-white  py-8  md:text-6xl   text-4xl     font-bold  text-center  2xl:text-9xl opacity-0 "
         >
           MooDeng: The Hippo MemeCoin on Tap Protocol
         </h1>
@@ -58,7 +58,7 @@ function FirstSection() {
           ref={(el) => {
             subHeading = el;
           }}
-          className="  md:text-2xl py-8 text-xl  font-bold text-center text-yellow-400  2xl:text-6xl"
+          className="  md:text-2xl py-8 text-xl  font-bold text-center text-yellow-400  2xl:text-6xl opacity-0"
         >
           Enter the whimsical world of MooDeng, the hippo-themed meme coin, now
           powered by TapOnDoge most advanced programmable L1 protocol!
