@@ -47,7 +47,7 @@ header {
 }
 
 .btn {
-  @apply bg-slate-500 text-white py-3 px-10  hover:bg-zinc-400   rounded-lg transition-all duration-500 ease-in-out font-bold shadow-lg;
+  @apply bg-slate-500 text-white py-3 px-10  hover:bg-zinc-400   rounded-lg transition-all duration-500 ease-in-out font-bold shadow-lg opacity-0;
 }
 
 .transitional-el {

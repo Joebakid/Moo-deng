@@ -1,9 +1,43 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { Power3 } from "gsap";
 
 function FirstSection() {
-  function Link({ text, href, btn }) {
+  let title = useRef(null);
+  let subHeading = useRef(null);
+  let btn = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+    console.log(title);
+    tl.fromTo(
+      title,
+      { opacity: 0, y: "-30% " },
+      { opacity: 1, duration: 2, ease: Power3.easeOut, y: "0% " }
+    )
+      .fromTo(
+        subHeading,
+        { opacity: 0, y: "30%" },
+        { opacity: 1, duration: 2, ease: Power3.easeOut, y: "0% " },
+        "<25%"
+      )
+      .fromTo(
+        btn.current,
+        { opacity: 0, y: "30%" },
+        { opacity: 1, duration: 1, ease: Power3.easeOut, y: "0% " },
+        "<25%"
+      );
+  }, []);
+
+  function Link({ text, href, btn, buttonRef }) {
     return (
-      <a className={btn} href={href} target="target" rel="noopener noreferrer">
+      <a
+        ref={buttonRef}
+        className={btn}
+        href={href}
+        target="target"
+        rel="noopener noreferrer"
+      >
         {text}
       </a>
     );
@@ -12,16 +46,26 @@ function FirstSection() {
   return (
     <header id="home" className="  h-full ">
       <div className=" flex flex-col items-center justify-center py-24   md:w-[65%] mx-auto w-[80%]">
-        <h1 className="  text-white  py-8  md:text-6xl   text-4xl     font-bold  text-center  2xl:text-9xl  ">
+        <h1
+          ref={(el) => {
+            title = el;
+          }}
+          className="  text-white  py-8  md:text-6xl   text-4xl     font-bold  text-center  2xl:text-9xl  "
+        >
           MooDeng: The Hippo MemeCoin on Tap Protocol
         </h1>
-        <h3 className="  md:text-2xl py-8 text-xl  font-bold text-center text-yellow-400  2xl:text-6xl">
+        <h3
+          ref={(el) => {
+            subHeading = el;
+          }}
+          className="  md:text-2xl py-8 text-xl  font-bold text-center text-yellow-400  2xl:text-6xl"
+        >
           Enter the whimsical world of MooDeng, the hippo-themed meme coin, now
           powered by TapOnDoge most advanced programmable L1 protocol!
         </h3>
 
         <div className="flex justify-center items-center py-10">
-          <Link btn="btn" href="#" text="Trade Moo Soon" />
+          <Link buttonRef={btn} btn="btn" href="#" text="Trade Moo Soon" />
         </div>
       </div>
     </header>
