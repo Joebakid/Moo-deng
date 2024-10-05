@@ -16,7 +16,7 @@ function ThirdSection() {
         scrollTrigger: {
           trigger: titleThirdSection.current,
           start: "top 30%",
-          markers: true,
+        
         },
       })
       .fromTo(
