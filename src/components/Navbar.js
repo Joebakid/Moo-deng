@@ -16,7 +16,7 @@ const Navbar = () => {
     tl.fromTo(
       nav,
       { opacity: 0, y: "-30%" },
-      { opacity: 1, y: "0%", duration: 3, delay: 0.2 }
+      { opacity: 1, y: "0%", duration: 3, delay: 0.2, ease: Power3.easeOut }
     );
   }, []);
 
