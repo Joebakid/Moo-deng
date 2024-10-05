@@ -25,6 +25,8 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 
   /* background: rgba(255, 255, 255, 0.5);   */
   /* opacity: 0.3; */
