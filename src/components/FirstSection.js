@@ -13,18 +13,30 @@ function FirstSection() {
     tl.fromTo(
       title,
       { opacity: 0, y: "-30% " },
-      { opacity: 1, duration: 2, ease: Power3.easeOut, y: "0% " }
+      { opacity: 1, duration: 2, ease: Power3.easeOut, y: "0% ", scrub: 4 }
     )
       .fromTo(
         subHeading,
         { opacity: 0, y: "30%" },
-        { opacity: 1, duration: 2, ease: Power3.easeOut, y: "0% " },
+        {
+          opacity: 1,
+          duration: 2,
+          ease: Power3.easeOut,
+          y: "0% ",
+          scrub: 4,
+        },
         "<25%"
       )
       .fromTo(
         btn.current,
         { opacity: 0, y: "30%" },
-        { opacity: 1, duration: 1, ease: Power3.easeOut, y: "0% " },
+        {
+          opacity: 1,
+          duration: 1,
+          ease: Power3.easeOut,
+          y: "0% ",
+          scrub: 4,
+        },
         "<25%"
       );
   }, []);

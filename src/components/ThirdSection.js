@@ -16,13 +16,13 @@ function ThirdSection() {
         scrollTrigger: {
           trigger: titleThirdSection.current,
           start: "top 30%",
-        
+          scrub: 4,
         },
       })
       .fromTo(
         titleThirdSection.current,
         { opacity: 0, y: "-30%", ease: Power3.easeOut },
-        { opacity: 1, y: "0%", duration: 1 }
+        { opacity: 1, y: "0%", duration: 1, scrub: 4 }
       );
 
     // Scroll trigger for the first card
@@ -36,7 +36,8 @@ function ThirdSection() {
         ease: Power3.easeOut,
         scrollTrigger: {
           trigger: cardOne.current,
-          start: "top 75%", // Trigger starts when card enters 75% of viewport
+          start: "top 75%",
+          scrub: 4, // Trigger starts when card enters 75% of viewport
         },
       }
     );
@@ -52,7 +53,8 @@ function ThirdSection() {
         ease: Power3.easeOut,
         scrollTrigger: {
           trigger: cardTwo.current,
-          start: "top 75%", // Trigger starts when card enters 75% of viewport
+          start: "top 75%",
+          scrub: 4, // Trigger starts when card enters 75% of viewport
         },
       }
     );
