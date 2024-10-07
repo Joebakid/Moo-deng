@@ -14,6 +14,7 @@ function SecondSection() {
         trigger: paragraphRef.current, // Trigger animation when the paragraph comes into view
         start: "top 80%",
         scrub: 4,
+        // markers: true,
       },
     });
 
