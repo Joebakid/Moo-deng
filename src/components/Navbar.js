@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { Power3 } from "gsap";
-// import FirstSection from "./FirstSection";
-// import SecondSection from "./SecondSection";
-// import ThirdSection from "./ThirdSection";
-// import FourthSection from "./FourthSection";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -103,7 +99,8 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <ul className="flex flex-col justify-center items-center space-y-10 h-full py-10">
+
+          <ul className="flex flex-col justify-center items-center space-y-10 h-screen py-10 bg-gray-800 ">
             <li>
               <a
                 href="#home"

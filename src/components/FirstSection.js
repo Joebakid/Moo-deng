@@ -7,6 +7,10 @@ function FirstSection() {
   let subHeading = useRef(null);
   let btn = useRef(null);
 
+  function btnDOesNothing(e) {
+    e.preventDefault();
+  }
+
   useEffect(() => {
     const tl = gsap.timeline();
     console.log(title);
@@ -41,12 +45,13 @@ function FirstSection() {
       );
   }, []);
 
-  function Link({ text, href, btn, buttonRef }) {
+  function Link({ text, href, btn, buttonRef, onClick }) {
     return (
       <a
         ref={buttonRef}
         className={btn}
         href={href}
+        onClick={onClick}
         target="target"
         rel="noopener noreferrer"
       >
@@ -77,7 +82,13 @@ function FirstSection() {
         </h3>
 
         <div className="flex justify-center items-center py-10">
-          <Link buttonRef={btn} btn="btn" href="#" text="Trade Moo Soon" />
+          <Link
+            buttonRef={btn}
+            btn="btn"
+            href="#"
+            text="Trade Moo Soon"
+            onClick={btnDOesNothing}
+          />
         </div>
       </div>
     </header>
