@@ -100,7 +100,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <ul className="flex flex-col justify-center items-center space-y-10 h-screen py-10 bg-gray-800 ">
+          <ul className="flex flex-col justify-center items-center space-y-10 h-screen py-1 bg-gray-800 ">
             <li>
               <a
                 href="#home"
